@@ -1,0 +1,543 @@
+': This program uses
+': InForm GUI engine for QB64-PE - v1.5.6
+': Fellippe Heitor, (2016 - 2022) - @FellippeHeitor
+': Samuel Gomes, (2023 - 2024) - @a740g
+': https://github.com/a740g/InForm-PE
+'-----------------------------------------------------------
+
+': Controls' IDs: ------------------------------------------------------------------
+DIM SHARED ConvertBT AS LONG
+DIM SHARED Cancel AS LONG
+DIM SHARED MainForm AS LONG
+DIM SHARED UseREM AS LONG
+DIM SHARED ConvertLinefeed AS LONG
+DIM SHARED Explicit AS LONG
+DIM SHARED DimAll AS LONG
+DIM SHARED Frame1 AS LONG
+DIM SHARED RadioAlphabetical AS LONG
+DIM SHARED RadioAppearance AS LONG
+DIM SHARED Frame2 AS LONG
+DIM SHARED RadioAboveFirst AS LONG
+DIM SHARED RadioBelowLast AS LONG
+DIM SHARED MoveDEFFNFunctionsToBottomOfProgCB AS LONG
+DIM SHARED ConvertVarsToDIMASINTEGERCB AS LONG
+DIM SHARED CheckBox6 AS LONG
+DIM SHARED StripUULN AS LONG
+DIM SHARED ConvertAtEndTo_CB AS LONG
+DIM SHARED ExplicitBox AS LONG
+DIM SHARED BasicPlusConverter AS LONG
+DIM SHARED InputFileBox AS LONG
+DIM SHARED ButtonChooseInput AS LONG
+DIM SHARED OutputFileBox AS LONG
+DIM SHARED BasicPlusInputFileLB AS LONG
+DIM SHARED ConvertedOutputFile AS LONG
+DIM SHARED ButtonChooseOutput AS LONG
+DIM SHARED OptionsLB AS LONG
+
+': External modules: ---------------------------------------------------------------
+'$INCLUDE:'InForm\InForm.bi'
+'$INCLUDE:'InForm\xp.uitheme'
+'$INCLUDE:'ainForm.frm'
+
+': Event procedures: ---------------------------------------------------------------
+SUB __UI_BeforeInit
+
+END SUB
+
+SUB __UI_OnLoad
+
+END SUB
+
+SUB __UI_BeforeUpdateDisplay
+    'This event occurs at approximately 60 frames per second.
+    'You can change the update frequency by calling SetFrameRate DesiredRate%
+
+END SUB
+
+SUB __UI_BeforeUnload
+    'If you set __UI_UnloadSignal = False here you can
+    'cancel the user's request to close.
+
+END SUB
+
+SUB __UI_Click (id AS LONG)
+    SELECT CASE id
+        CASE ConvertBT
+
+        CASE Cancel
+
+        CASE MainForm
+
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE Frame1
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE Frame2
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+        CASE BasicPlusConverter
+
+        CASE InputFileBox
+
+        CASE ButtonChooseInput
+
+        CASE OutputFileBox
+
+        CASE BasicPlusInputFileLB
+
+        CASE ConvertedOutputFile
+
+        CASE ButtonChooseOutput
+
+        CASE OptionsLB
+
+    END SELECT
+END SUB
+
+SUB __UI_MouseEnter (id AS LONG)
+    SELECT CASE id
+        CASE ConvertBT
+
+        CASE Cancel
+
+        CASE MainForm
+
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE Frame1
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE Frame2
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+        CASE BasicPlusConverter
+
+        CASE InputFileBox
+
+        CASE ButtonChooseInput
+
+        CASE OutputFileBox
+
+        CASE BasicPlusInputFileLB
+
+        CASE ConvertedOutputFile
+
+        CASE ButtonChooseOutput
+
+        CASE OptionsLB
+
+    END SELECT
+END SUB
+
+SUB __UI_MouseLeave (id AS LONG)
+    SELECT CASE id
+        CASE ConvertBT
+
+        CASE Cancel
+
+        CASE MainForm
+
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE Frame1
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE Frame2
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+        CASE BasicPlusConverter
+
+        CASE InputFileBox
+
+        CASE ButtonChooseInput
+
+        CASE OutputFileBox
+
+        CASE BasicPlusInputFileLB
+
+        CASE ConvertedOutputFile
+
+        CASE ButtonChooseOutput
+
+        CASE OptionsLB
+
+    END SELECT
+END SUB
+
+SUB __UI_FocusIn (id AS LONG)
+    SELECT CASE id
+        CASE ConvertBT
+
+        CASE Cancel
+
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+        CASE InputFileBox
+
+        CASE ButtonChooseInput
+
+        CASE OutputFileBox
+
+        CASE ButtonChooseOutput
+
+    END SELECT
+END SUB
+
+SUB __UI_FocusOut (id AS LONG)
+    'This event occurs right before a control loses focus.
+    'To prevent a control from losing focus, set __UI_KeepFocus = True below.
+    SELECT CASE id
+        CASE ConvertBT
+
+        CASE Cancel
+
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+        CASE InputFileBox
+
+        CASE ButtonChooseInput
+
+        CASE OutputFileBox
+
+        CASE ButtonChooseOutput
+
+    END SELECT
+END SUB
+
+SUB __UI_MouseDown (id AS LONG)
+    SELECT CASE id
+        CASE ConvertBT
+
+        CASE Cancel
+
+        CASE MainForm
+
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE Frame1
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE Frame2
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+        CASE BasicPlusConverter
+
+        CASE InputFileBox
+
+        CASE ButtonChooseInput
+
+        CASE OutputFileBox
+
+        CASE BasicPlusInputFileLB
+
+        CASE ConvertedOutputFile
+
+        CASE ButtonChooseOutput
+
+        CASE OptionsLB
+
+    END SELECT
+END SUB
+
+SUB __UI_MouseUp (id AS LONG)
+    SELECT CASE id
+        CASE ConvertBT
+
+        CASE Cancel
+
+        CASE MainForm
+
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE Frame1
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE Frame2
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+        CASE BasicPlusConverter
+
+        CASE InputFileBox
+
+        CASE ButtonChooseInput
+
+        CASE OutputFileBox
+
+        CASE BasicPlusInputFileLB
+
+        CASE ConvertedOutputFile
+
+        CASE ButtonChooseOutput
+
+        CASE OptionsLB
+
+    END SELECT
+END SUB
+
+SUB __UI_KeyPress (id AS LONG)
+    'When this event is fired, __UI_KeyHit will contain the code of the key hit.
+    'You can change it and even cancel it by making it = 0
+    SELECT CASE id
+        CASE ConvertBT
+
+        CASE Cancel
+
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+        CASE InputFileBox
+
+        CASE ButtonChooseInput
+
+        CASE OutputFileBox
+
+        CASE ButtonChooseOutput
+
+    END SELECT
+END SUB
+
+SUB __UI_TextChanged (id AS LONG)
+    SELECT CASE id
+        CASE InputFileBox
+
+        CASE OutputFileBox
+
+    END SELECT
+END SUB
+
+SUB __UI_ValueChanged (id AS LONG)
+    SELECT CASE id
+        CASE UseREM
+
+        CASE ConvertLinefeed
+
+        CASE Explicit
+
+        CASE DimAll
+
+        CASE RadioAlphabetical
+
+        CASE RadioAppearance
+
+        CASE RadioAboveFirst
+
+        CASE RadioBelowLast
+
+        CASE MoveDEFFNFunctionsToBottomOfProgCB
+
+        CASE ConvertVarsToDIMASINTEGERCB
+
+        CASE CheckBox6
+
+        CASE StripUULN
+
+        CASE ConvertAtEndTo_CB
+
+        CASE ExplicitBox
+
+    END SELECT
+END SUB
+
+SUB __UI_FormResized
+
+END SUB
+
+'$INCLUDE:'InForm/InForm.ui'
